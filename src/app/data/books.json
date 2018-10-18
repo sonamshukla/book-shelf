@@ -2,73 +2,97 @@
     {
       "id" : 1,
       "title": "Book-1",
-      "status":"none",
+      "status":"None",
+      "author":"Author-1",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 2,
       "title": "Book-2",
-      "status":"none",
+      "status":"None",
+      "author":"Author-2",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 3,
       "title": "Book-3",
-      "status":"Wanted to Read",
+      "status":"Want to Read",
+      "author":"Author-3",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 4,
       "title": "Book-4",
       "status":"Read",
+       "author":"Author-4",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 5,
       "title": "Book-5",
       "status":"currently reading",
+       "author":"Author-5",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 6,
       "title": "Book-6",
-      "status":"none",
+      "status":"None",
+       "author":"Author-6",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 7,
       "title": "Book-7",
       "status":"currently reading",
+       "author":"Author-7",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 8,
       "title": "Book-8",
-      "status":"none",
+      "status":"None",
+       "author":"Author-8",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 9,
       "title": "Book-9",
       "status":"currently reading",
+       "author":"Author-9",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 10,
       "title": "Book-10",
       "status":"read",
+       "author":"Author-10",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 11,
       "title": "Book-11",
       "status":"read",
+       "author":"Author-11",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     },
     {
       "id" : 12,
       "title": "Book-12",
-      "status":"none",
+      "status":"None",
+       "author":"Author-12",
+      "imgUrl":"../../assets/image/Default_cover.jpg",
       "isShelfListVisible": false
     }
   ]

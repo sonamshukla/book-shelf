@@ -14,12 +14,20 @@
     text-align: center;
     border: 1px solid grey;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-top: 0;
   }
   .hdr-wrpr{
-    background-color: $primary-theme-color;
+    background-color: $primary-theme-color;;
     width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .search-inp{
+    padding: 3px;
+  }
+  .book-shelve-wrapper{
+    border:none;
   }
 
 }

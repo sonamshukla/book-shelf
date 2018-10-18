@@ -11,7 +11,6 @@ export class BooksComponent implements OnInit {
 book: any;
 @Input() books: Book[];
 @Input() searchText: string;
-@Output() changeStatus = new EventEmitter();
   constructor(private bookService: BookService) { }
 
   ngOnInit() {
@@ -28,14 +27,10 @@ book: any;
     this.book = book;
     console.log(book);
   }
-  changeStatus1() {
-    this.changeStatus.emit(this.books);
-  }
   onSelectCategory(category) {
     this.book.isShelfListVisible = false;
     this.bookService.toggle(this.book.id, category);
     console.log(this.books);
-    //this.changeStatus1();
   }
 
 }

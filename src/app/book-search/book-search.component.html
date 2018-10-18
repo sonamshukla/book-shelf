@@ -1,10 +1,10 @@
 <div class="com-wrapper bk-lst-wrpr">
   <div class="hdr-wrpr">
     <div class="dis-inline">
-      <app-header title="" [isBackBtn]="yes"></app-header>
+      <app-header title="" [isBackBtn]="true" (goBack)="goToBookList()"></app-header>
     </div>
     <div class="dis-inline search-inp">
-      <input type="text" [(ngModel)]="searchText" placeholder="Search by book title"/>
+      <input type="text" [(ngModel)]="searchText" placeholder="Search by book title" class="search-inp"/>
     </div>
   </div>
   <div>

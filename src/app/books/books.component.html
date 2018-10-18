@@ -1,10 +1,14 @@
 <div class="book-lst-wrapper">
   <ng-container *ngIf="(books | search:searchText) as result">
     <ng-container *ngIf="result.length">
-      <div *ngFor="let book of result" class="book">
+      <div *ngFor="let book of result" class="book-wrpr">
+        <div  class="book">
+          <img src="{{book.imgUrl}}"/>
+          <div class="mn-btn" (click)="changeListVisibility(book)">&#10094;</div>
+          <app-shelf-list [selectedBook] ="book" (selectCategory) = "onSelectCategory($event)"></app-shelf-list>
+        </div>
         <div><span>{{book.title}}</span></div>
-        <div class="mn-btn" (click)="changeListVisibility(book)"></div>
-        <app-shelf-list [isListVisible] ="book.isShelfListVisible" (selectCategory) = "onSelectCategory($event)"></app-shelf-list>
+        <div><span>{{book.author}}</span></div>
       </div>
     </ng-container>
     <div *ngIf="!result.length">No result found !</div>

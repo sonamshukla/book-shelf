@@ -6,14 +6,28 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./shelf-list.component.scss']
 })
 export class ShelfListComponent implements OnInit {
-  @Input() isListVisible: boolean;
+  @Input() selectedBook: any;
   @Output() selectCategory = new EventEmitter();
+  selected:string;
+  category = [
+    'Want to Read',
+    'Read',
+    'Currently reading',
+    'None'
+  ];
   constructor() { }
 
   ngOnInit() {
-    console.log('isListVisible' + this.isListVisible);
+    this.selected = this.selectedBook.status;
+    console.log(this.selectedBook)
   }
   valueChanged(category) {
+    this.selected = category;
     this.selectCategory.emit(category);
+  }
+  checkSelected(cat){
+    if(this.selected.toLowerCase() === cat.toLowerCase())
+    return true;
+    return false;
   }
 }

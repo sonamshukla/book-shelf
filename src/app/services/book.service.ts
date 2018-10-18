@@ -25,26 +25,6 @@ export class BookService {
   getBookes(): Observable<Book[]> {
     return this.http.get<Book[]>('../../../src/app/data/books.json');
   }
-  getBookByShelf(books) {
-    var currentlyReadingBooks = [], readBooks=[], wantedToBooks=[], newBooks=[];
-    for (let i = 0; i < books.length; i++) {
-      if ( books[i].status.toLowerCase() === 'currently reading') {
-        currentlyReadingBooks.push(books[i]);
-      } else if ( books[i].status.toLowerCase() === 'want to read') {
-        readBooks.push(books[i]);
-      } else if ( books[i].status.toLowerCase() === 'read') {
-        wantedToBooks.push(books[i]);
-      } else {
-        newBooks.push(books[i]);
-      }
-    }
-    return {
-      currentlyReadingBooks: currentlyReadingBooks,
-      readBooks: readBooks,
-      wantedToBooks: wantedToBooks,
-      newBooks: newBooks
-    };
-  }
   toggle(bookId, category) {
     var that = this;
     this.books.forEach((book, ind) => {
@@ -54,7 +34,11 @@ export class BookService {
     });
     this.change.emit(this.books);
   }
- /*  createBook(hero: Book): Observable<Book> {
+  addBook(book){
+    this.books.push(book);
+    this.change.emit(this.books);
+  }
+ /* createBook(hero: Book): Observable<Book> {
     return this.http.post<Book>(this.booksUrl, JSON.stringify({
       name: hero.name,
       alterEgo: hero.alterEgo

@@ -8,22 +8,22 @@
     </div>
   </div>
   <div class="shelve-container">
-    <div *ngIf="newBooks.length" class="book-shelve-wrapper">
-      <h2 class="shelve-title">New Books</h2>
-      <app-books [books]="newBooks" (changeStatus)="seprateBooksByShelves($event)"></app-books>
+    <div *ngIf="wantToBooks.length" class="book-shelve-wrapper">
+      <h2 class="shelve-title">Want to Read</h2>
+      <app-books [books]="wantToBooks"></app-books>
     </div>
     <div *ngIf="currentlyReadingBooks.length" class="book-shelve-wrapper">
       <h2 class="shelve-title">Currently Reading</h2>
-      <app-books [books]="currentlyReadingBooks" (changeStatus)="seprateBooksByShelves($event)" ></app-books>
+      <app-books [books]="currentlyReadingBooks" ></app-books>
     </div>
     <div *ngIf="readBooks.length" class="book-shelve-wrapper">
-      <h2 class="shelve-title">Wanted to Read</h2>
-      <app-books [books]="readBooks" (changeStatus)="seprateBooksByShelves($event)"></app-books>
-    </div>
-    <div *ngIf="wantedToBooks.length" class="book-shelve-wrapper">
       <h2 class="shelve-title">Read</h2>
-      <app-books [books]="wantedToBooks" (changeStatus)="seprateBooksByShelves($event)"></app-books>
+      <app-books [books]="readBooks"></app-books>
+    </div>
+    <div *ngIf="newBooks.length" class="book-shelve-wrapper">
+      <h2 class="shelve-title">New Books</h2>
+      <app-books [books]="newBooks"></app-books>
     </div>
   </div>
-  <button class="add-btn">+</button>
+  <button class="add-btn" (click)="goToAddBookPage()">+</button>
 </div>

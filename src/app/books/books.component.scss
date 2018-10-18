@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
+  padding-bottom:30px
 }
 .mn-btn{
   position: absolute;
@@ -14,6 +15,9 @@
   border-radius: 50%;
   font-size: $xxl-fnt;
   background-color: $primary-theme-color;
+  background-color: #4886FF;
+  transform: rotate(-90deg);
+  color: white;
 }
 .book{
   position:relative;
@@ -23,7 +27,13 @@
   justify-content: center;
   display: flex;
   background-color: #e6dfdf;
-  margin: 30px;
+  margin: 30px 30px 10px 30px;
+  border: 1px solid grey;
+}
+.book img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .arrow-down {
   width: 0;

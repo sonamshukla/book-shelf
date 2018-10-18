@@ -1,4 +1,4 @@
 <div class="header-wrapper">
-  <button *ngIf="isBackBtn" class="bck-btn"><span class="flaticon-left-arrow"></span></button>
+  <button *ngIf="isBackBtn" class="bck-btn" (click) = "onGoBack()"><span class="flaticon-left-arrow">&#8592;</span></button>
   <span>{{title}}</span>
 </div>

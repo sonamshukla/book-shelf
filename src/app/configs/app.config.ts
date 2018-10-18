@@ -6,6 +6,7 @@ export const AppConfig: any = {
   routes: {
     'books': 'books',
     'search-book': 'search-book',
+    'add-book': 'add-book',
     'error404': '404'
   },
   endpoints: {
