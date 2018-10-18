@@ -12,6 +12,10 @@
   }
   .book-shelve-wrapper{
     text-align: center;
+    border: 1px solid grey;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 0;
   }
   .hdr-wrpr{
     background-color: $primary-theme-color;

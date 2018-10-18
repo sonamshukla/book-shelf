@@ -22,9 +22,16 @@ export class BooksListComponent implements OnInit {
       this.books = books;
       this.seprateBooksByShelves(books);
     });
+    this.bookService.change.subscribe(books => {
+      this.books = books;
+      this.seprateBooksByShelves(books);
+    })
   }
   seprateBooksByShelves(books) {
-    console.log(books);
+    this.currentlyReadingBooks = [];
+    this.readBooks = [];
+    this.wantedToBooks = [];
+    this.newBooks = [];
     for (let i = 0; i < books.length; i++) {
       if ( books[i].status.toLowerCase() === 'currently reading') {
         this.currentlyReadingBooks.push(books[i]);

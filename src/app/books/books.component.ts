@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Book } from '../model/book.model';
+import {BookService} from '../services/book.service';
 
 @Component({
   selector: 'app-books',
@@ -11,7 +12,7 @@ book: any;
 @Input() books: Book[];
 @Input() searchText: string;
 @Output() changeStatus = new EventEmitter();
-  constructor() { }
+  constructor(private bookService: BookService) { }
 
   ngOnInit() {
     console.log('searchText: ' + this.searchText);
@@ -32,6 +33,7 @@ book: any;
   }
   onSelectCategory(category) {
     this.book.isShelfListVisible = false;
+    this.bookService.toggle(this.book.id, category);
     console.log(this.books);
     //this.changeStatus1();
   }
