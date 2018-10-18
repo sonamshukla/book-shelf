@@ -1,0 +1,75 @@
+[
+    {
+      "id" : 1,
+      "title": "Book-1",
+      "status":"none",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 2,
+      "title": "Book-2",
+      "status":"none",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 3,
+      "title": "Book-3",
+      "status":"Wanted to Read",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 4,
+      "title": "Book-4",
+      "status":"Read",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 5,
+      "title": "Book-5",
+      "status":"currently reading",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 6,
+      "title": "Book-6",
+      "status":"none",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 7,
+      "title": "Book-7",
+      "status":"currently reading",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 8,
+      "title": "Book-8",
+      "status":"none",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 9,
+      "title": "Book-9",
+      "status":"currently reading",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 10,
+      "title": "Book-10",
+      "status":"read",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 11,
+      "title": "Book-11",
+      "status":"read",
+      "isShelfListVisible": false
+    },
+    {
+      "id" : 12,
+      "title": "Book-12",
+      "status":"none",
+      "isShelfListVisible": false
+    }
+  ]
+

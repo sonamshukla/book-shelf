@@ -1,0 +1,12 @@
+@import '../../../shared/_variables';
+.header-wrapper{
+  padding: 0 12px;
+  font-size: $xl-fnt;
+  color:white;
+  height:56px;
+  display: flex;
+  align-items: center;
+}
+.bck-btn{
+ padding-left:0;
+}

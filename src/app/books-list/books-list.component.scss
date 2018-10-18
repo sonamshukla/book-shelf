@@ -1,0 +1,31 @@
+
+@import "../shared/variables";
+.bk-lst-wrpr{
+  .search-link{
+    float: right;
+    height: 100%;
+    padding: 0 20px;
+    line-height: 52px;
+  }
+  .search-link a{
+    color:white;
+  }
+  .book-shelve-wrapper{
+    text-align: center;
+  }
+  .hdr-wrpr{
+    background-color: $primary-theme-color;
+    width: 100%;
+  }
+  .add-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: $xxl-fnt;
+  }
+}
+
+

@@ -1,0 +1,16 @@
+<div class="com-wrapper bk-lst-wrpr">
+  <div class="hdr-wrpr">
+    <div class="dis-inline">
+      <app-header title="" [isBackBtn]="yes"></app-header>
+    </div>
+    <div class="dis-inline search-inp">
+      <input type="text" [(ngModel)]="searchText" placeholder="Search by book title"/>
+    </div>
+  </div>
+  <div>
+    <div *ngIf="books.length" class="book-shelve-wrapper">
+      <h2>All Books</h2>
+      <app-books [books]="books" [searchText]="searchText"></app-books>
+    </div>
+  </div>
+</div>

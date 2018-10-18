@@ -1,0 +1,12 @@
+<div class="book-lst-wrapper">
+  <ng-container *ngIf="(books | search:searchText) as result">
+    <ng-container *ngIf="result.length">
+      <div *ngFor="let book of result" class="book">
+        <div><span>{{book.title}}</span></div>
+        <div class="mn-btn" (click)="changeListVisibility(book)"></div>
+        <app-shelf-list [isListVisible] ="book.isShelfListVisible" (selectCategory) = "onSelectCategory($event)"></app-shelf-list>
+      </div>
+    </ng-container>
+    <div *ngIf="!result.length">No result found !</div>
+  </ng-container>
+</div>
