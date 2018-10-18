@@ -33,7 +33,7 @@ book: any;
   onSelectCategory(category) {
     this.book.isShelfListVisible = false;
     console.log(this.books);
-    this.changeStatus1();
+    //this.changeStatus1();
   }
 
 }
